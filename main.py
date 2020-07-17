@@ -8,7 +8,11 @@ def shift (message: str, key: int) ->str:
   encoded_message = ''
   for letter in message:
     if letter in alphabet:
-      
+      position = alphabet.index(letter)
+      encoded_message += alpha1[position]
+    else:
+      encoded_message += letter 
+  return encoded_message
 
 def substitution (message: str) -> str:
   pass
